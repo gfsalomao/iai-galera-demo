@@ -1,0 +1,26 @@
+/* filters.css */
+
+#filterSection {
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+#filterForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#filterForm input,
+#filterForm button {
+  flex: 1 1 150px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  #filterForm {
+    flex-direction: column;
+  }
+}

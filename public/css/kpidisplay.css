@@ -1,0 +1,28 @@
+/* kpidisplay.css */
+
+#kpiSection {
+  padding: 1rem;
+}
+
+#kpiContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.kpi-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #fff;
+  flex: 1 1 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  #kpiContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

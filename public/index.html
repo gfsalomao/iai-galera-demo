@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard KPI</title>
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/kpidisplay.css">
+    <link rel="stylesheet" href="css/alert.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard KPI</h1>
+    </header>
+    <!-- Sessão de autenticação (placeholder para integração com sistema de login) -->
+    <section id="authSection">
+        <!-- Conteúdo de autenticação será inserido aqui -->
+    </section>
+    <!-- Seção de Filtros -->
+    <section id="filterSection">
+        <form id="filterForm">
+            <input type="date" id="startDate" name="startDate" placeholder="Data início">
+            <input type="date" id="endDate" name="endDate" placeholder="Data fim">
+            <input type="text" id="team" name="team" placeholder="Equipe">
+            <input type="text" id="activityType" name="activityType" placeholder="Tipo de Atividade">
+            <input type="text" id="project" name="project" placeholder="Projeto">
+            <button type="submit">Filtrar</button>
+        </form>
+    </section>
+    <!-- Seção de Alertas -->
+    <section id="alertSection"></section>
+    <!-- Seção de exibição de KPIs -->
+    <section id="kpiSection">
+        <div id="kpiContainer"></div>
+    </section>
+    
+    <script src="js/services/kpiService.js"></script>
+    <script src="js/controllers/kpiController.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

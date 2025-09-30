@@ -1,0 +1,20 @@
+/* alert.css */
+
+#alertSection {
+  padding: 1rem;
+}
+
+.alert {
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: #ffe5e5;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .alert {
+    font-size: 0.9rem;
+  }
+}
